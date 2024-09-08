@@ -10,7 +10,7 @@
 
 .latar {
     z-index: -99;
-    height: 103vh;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
