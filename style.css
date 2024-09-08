@@ -1,0 +1,578 @@
+*, html, body{
+    cursor: url(asst/img/cursor/default.png) 17 17, default;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+    background: transparent;
+}
+
+.latar {
+    z-index: -99;
+    height: 103vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: ergebelatar 60s linear infinite;
+}
+@keyframes ergebelatar {
+    0%{
+        filter: opacity(.8) blur(1px) hue-rotate(170deg) contrast(100%) brightness(175%);
+    }
+    50%{
+        filter: opacity(.3) blur(3px) hue-rotate(auto) contrast(110%) brightness(150%);
+    }
+    100%{
+        filter: opacity(.8) blur(1px) hue-rotate(530deg) contrast(100%) brightness(175%);
+    }    
+}
+
+::selection{
+    color: black;
+    background-color: #ff8000;
+    text-shadow: 0 0 5px red;
+}
+
+::-webkit-scrollbar{
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track{
+    background: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #a75400;
+    border-radius: 1vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #ff8000;
+}
+
+h1{
+    margin: -1vw 0 0 0;
+    font-size: 4vw;
+    background-color: transparent;
+    text-shadow: 0 0 .8vw #ff8000;
+}
+  
+h2{
+    margin: -.3vw 0 -1vw 0;
+    font-size: 3vw;
+    background-color: transparent;
+}
+  
+h4{
+    font-size: 1.5vw;
+    background-color: transparent;
+}
+  
+h6{
+    font-weight: 700;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+li{
+    font-weight: bold;
+}
+  
+p{
+    font-size: 1.3vw;
+    background-color: transparent;
+}
+
+.tentang p{
+    text-align: justify;
+}
+
+span{
+    font-size: 1.8vw;
+    text-shadow: 0 0 .5vw #ff8000;
+    font-weight: bold;
+    right: 0; 
+    left: 0;
+}
+
+button{
+    font-size: 1vw;
+    border-color: #ff8000 transparent;
+    background-color: transparent;
+    color: #ff8000;
+    padding: .5vw 1vw;
+    
+    transition: all .5s ease 0s;
+    opacity: 75%;
+}
+
+button:hover, button.active{
+    text-shadow: 0 0 .8vw #ff8000;
+    opacity: 100%;
+}
+
+#mobile, #clsbar{
+    display: none;
+}
+
+body{
+    color: white;
+    background: black;
+}
+
+header{
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    background: rgba(0, 0, 0, 75%);
+    box-shadow: 0 .5vw 1vw #ff8000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.ilogo{
+    margin-left: 4.5vw;
+    width: 4vw;
+}
+
+.logo {
+    font-size: 3vw;
+    align-self: center;
+    margin: 0 1vw -.2vw 1vw;
+    color: #ff9e3d;
+}
+
+.klogo{
+    margin: 0 10.3vw 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease 0s;
+    opacity: 75%;
+}
+
+.klogo:hover, .klogo:active{
+    color: #ff8000;
+    text-shadow: 0 0 1vw #ff8000;
+    opacity: 100%;
+}
+
+
+
+.wrapper{
+    display: flex;
+    padding: .02px;
+    font-weight: 900;
+    cursor: default;
+    background: orangered;
+    border-radius: 1vw;
+    animation: ergebe 60s linear infinite;
+}
+.wrapper .display{
+    z-index: 99;
+    margin: .1vw;
+    background: rgba(0, 0, 0, 90%);
+    border-radius: 1vw;
+}
+.wrapper .display #time {
+    font-size: 1.15vw;
+    padding: .1vw .7vw;
+    letter-spacing: 1px;
+    background: orangered;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes ergebe {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }    
+}
+.wrapper span{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    border-radius: 1vw;
+}
+.wrapper span:first-child{
+    filter: blur(.3vw);
+}
+.wrapper span:last-child{
+    filter: blur(.8vw);
+}
+
+nav ul{
+    display: flex;
+    margin-right: 3.5vw;
+}
+
+nav li{
+    list-style-type: none;
+    opacity: 75%;
+    transition: all .5s ease 0s;
+}
+
+header nav ul li:hover, nav li.active{
+    color: #ffc284;
+    text-shadow: 0 0 .8vw #ff8000;
+    opacity: 100%;
+}
+
+nav li a{
+    padding: 1vw 1.3vw;
+}
+
+a{
+    font-size: 1.5vw;
+    color: white;
+    text-decoration: none;
+}
+
+.pg{
+    margin: 6vw 0 1vw 0;
+    padding: 3vw 5vw;
+}
+
+#s1 .cover{
+    padding: 3vw 0 0 0;
+    background-image: url(https://iili.io/H9l1lcJ.png);
+    background-size: 45vw;
+    height: 34vw;
+    background-position: bottom 0 right -5vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#s2 .cover{
+    padding: 3vw 0 0 0;
+    background-image: url(https://iili.io/H3cyRMg.png);
+    background-size: 70vw;
+    height: 34vw;
+    background-position: bottom -4.5vw right -5vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner #num{
+    display: none;
+}
+
+.banner-c{
+    padding: 1vw 10vw;
+    background-color: rgba(0 ,0 ,0 ,50%);
+}
+
+.banner-c p{
+    margin: 1vw 0 2vw 0;
+}
+
+.parag {
+    text-align: center;
+    background: black;
+    padding: 1.5vw 0;
+    margin: 0 0 1.5vw 0;
+    box-shadow: 0 0 10px #ff8000;
+    padding: 1vw 3vw;
+}
+
+.prodc{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pc{
+    width: 23%;
+    min-width: 130px;
+    background-color: rgba(0 ,0 ,0 ,75%);
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    
+    margin-bottom: 20px;
+    position: relative;
+    transition: all .5s ease 0s;
+}
+  
+.pc img{
+    margin-top: 23px;
+}
+
+.pl1 .pc:hover{
+    color: #ff8000;
+    text-shadow: 0 0 1px white;
+    box-shadow: 0 0 20px #ff8000;
+    border: 1px solid #ff8000;
+}
+
+.ppl1 .pc:hover{
+    color: #ff8000;
+    text-shadow: 0 0 1px white;
+    box-shadow: 0 0 20px white;
+}
+
+.banner .sp1 .s{
+    display: none;
+}
+
+.banner .sp1 .s.active{
+    display: block;
+}
+
+.prodc .sp1 div{
+    display: none;
+}
+  
+.prodc .sp1 .active{
+    display: flex;
+    justify-content: center;
+}
+  
+.prodc .sp1 img{
+    min-width: 15vw;
+}
+
+.prodc #num{
+    position: absolute;
+    left: 49%;
+    font-size: 1.5vw;
+    color: #ff8000;
+    text-shadow: 0 0 3px #ff8000;
+}
+
+.descprod{
+    margin: 1vw;
+    
+}
+
+.descprod h5{
+    font: status-bar;
+    font-size: 1.5vw;
+}
+
+.pc span.c{
+    padding: .4vw 5vw .6vw 5vw;
+    color: #ff8000;
+    background-color: transparent;
+    border-top: 1.5px solid #ff8000;
+}
+
+.ppl1 #num,
+.ppl1 .descprod,
+.ppl1 .c{
+    animation: ergebe 3s linear infinite;
+}
+
+.vcount{
+    margin: 3vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: black;
+    box-shadow: 0 -3px 15px #ff8000;
+    text-align: center;
+    margin: 5px 0 0 0;
+    padding: 10px 5px;
+}
+
+footer a img{
+    margin-top: 1vw;
+}
+
+@media (max-width:700px){
+    h1{
+        font-size: 8vw;
+        background-color: transparent;
+        text-shadow: 0 1px 5px #ff8000;
+    }
+      
+    h2{
+        font-size: 7vw;
+        line-height: 1.3;
+        background-color: transparent;
+    }
+      
+    h4{
+        font-size: 4vw;
+        background-color: transparent;
+    }
+      
+    h6{
+        font-weight: 700;
+        font-size: .7vw;
+        background-color: transparent;
+    }
+      
+    p{
+        font-size: 3vw;
+        background-color: transparent;
+    }
+
+    .banner-c p {
+        margin: 1vw 0 3vw 0;
+    }
+
+    button{
+        text-shadow: 0 1px 3px#ff8000;
+        padding: 1vw 3vw;
+        font-size: 3vw;
+        opacity: 100%;
+    }
+
+    .ilogo{
+        margin-left: 8vw;
+        width: 10vw;
+    }
+
+    .klogo{
+        color: #ff8000;
+        text-shadow: 0 1px 10px #ff8000;
+        opacity: 100%;
+    }
+
+    .logo{
+        font-size: 8vw;
+        margin: 0 3vw -.7vw 3vw;
+    }
+
+    .clock{
+        display: none;
+    }
+
+    #mobile, #clsbar{
+        display: flex;
+    }
+
+    #bar {
+        margin-right: 5vw;
+        padding: 3vw;
+        image-rendering: pixelated;
+        width: 10vw;
+        opacity: 100%;
+        transition: all .3s ease 0s;
+    }
+
+    #bar.active{
+        margin-right: -10vw;
+    }
+
+    #clsbar {
+        image-rendering: pixelated;
+        padding: 3vw 8vw;
+        width: 20vw;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+
+    #navi {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px 0;
+        position: fixed;
+        top: -10px;
+        right: -200px;
+        height: 105vh;
+        background-color: rgba(0, 0, 0, 75%);
+        box-shadow: 0 0 5px 3px #ff8000;
+        border-left: 1px solid #ff8000;
+        transition: all .3s ease 0s;
+    }
+
+    #navi.active{
+        right: 0;
+    }
+
+    .nav li{
+        text-align: center;
+        margin: 1vw;
+    }
+
+    .nav li a{
+        padding: 0;
+        font-size: 3vw;
+    }
+
+    #time{
+        display: none;
+    }
+
+    #s1 .cover {
+        background-size: 100%;
+        background-position: bottom -13.5vw right -23vw;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 13vw 0 4vw 0;
+        background-repeat: no-repeat;
+    }
+
+    #s2 .cover {
+        background-size: 115%;
+        background-position: bottom -8vw right -55vw;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 13vw 0 4vw 0;
+        background-repeat: no-repeat;
+    }
+
+    .banner-c{
+        padding: 10px 10%;
+        background-color: rgba(0 ,0 ,0 ,50%);
+    }
+
+    .parag{
+        margin: 0 0 6vw 0;
+    }
+
+    .pc {
+        margin: 0 15px 20px;
+    }
+
+    .prodc #num{
+        font-size: 3vw;
+        margin: 5px 0;
+    }
+
+    .descprod span{
+        font: status-bar;
+        font-size: 4vw;
+        margin: 1vw;
+    }
+
+    .descprod h5{
+        font-size: 3vw;
+        margin: 1vw;
+    }
+
+    .pc span.c{
+        padding: 2.5px -1vw 4px -1vw;
+        margin: 2.5px 0 4px 0;
+        font: status-bar;
+    }
+}
